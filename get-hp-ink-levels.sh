@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-$MQTT_HOST=hassio.local
+MQTT_HOST=hassio.local
 MQTT_PORT=1883
 MQTT_USER=
 MQTT_PASS=
