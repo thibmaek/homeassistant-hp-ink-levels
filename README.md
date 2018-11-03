@@ -2,6 +2,8 @@
 
 🖨 Get ink levels from a HP printer and broadcast them as MQTT sensors to Home Assistant
 
+![screenshot of the ink levels in Home Assistant](./screenshot_ink_levels.png)
+
 ## Prerequirements
 
 All these packages are required and available via apt:
