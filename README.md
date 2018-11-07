@@ -36,7 +36,7 @@ Install it as a cron service:
 
 ```console
 # This will add the script located at /home/pi to the cron service, which will run every 5 minutes
-$ (crontab -l 2>/dev/null; echo "*/5 * * * * bash /home/pi/get-ink-levels.sh") | crontab -
+$ (crontab -l 2>/dev/null; echo "*/5 * * * * bash /home/pi/get-hp-ink-levels.sh") | crontab -
 ```
 
 Ink levels will now be published to topic: `homeassistant/sensor/hp-printer/color-#`. Subscribe to this topic to see the changes or add the sensors directly in Home Assistant as a MQTT sensor:
