@@ -56,7 +56,6 @@ sensor:
 ## Troubleshooting
 
 - Printer ink levels can only be retrieved when your printer is turned on. They will reflect latest known state in Home Assistant though.
-
 - If colors and levels mismatch, make sure to check the order that gets returned from hplip matches the order of the array in the script. I've found that my HP5510 returned something different than a 5520. Run `hp-info -i` and check the order of agent1, agent2, agent3, agent4 and their color. Match that to the order of the array and it should be fine. If you're using 'counterfeit' (cheaper, non HP properietary shit) cartridges, those might get bumped to the beginning of the list.
-
 - If you're getting 0 as the level on a cartridge you know is full, it's because HP blocks them since they are 'counterfeit'.
+- You might need to start the services for cron and cups manually: `sudo systemctl start cups; sudo systemctl start cron;`
